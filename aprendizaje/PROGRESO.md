@@ -4,7 +4,7 @@ Estados: ⬜ Pendiente · 🟡 En curso · ✅ Terminada · ⏭️ Salteada
 
 | #  | Lección                              | Estado | Inicio | Fin | Resumen en una línea |
 |----|--------------------------------------|--------|--------|-----|----------------------|
-| 00 | Course Setup                         | ⬜     |        |     |                      |
+| 00 | Course Setup                         | ✅     | 2026-09-23 | 2026-09-23 | Entorno de aprendizaje listo: CLAUDE.md, skills, plantillas y permisos |
 | 01 | Introducción a GenAI y LLMs          | ⬜     |        |     |                      |
 | 02 | Explorar y comparar LLMs             | ⬜     |        |     |                      |
 | 03 | Uso responsable de GenAI             | ⬜     |        |     |                      |
@@ -29,3 +29,4 @@ Estados: ⬜ Pendiente · 🟡 En curso · ✅ Terminada · ⏭️ Salteada
 
 ## Bitácora
 <!-- Una línea por sesión: AAAA-MM-DD — qué hice — qué me costó -->
+2026-09-23 — Setup del entorno (lección 00), Foundry configurado y prueba de humo OK con gpt-5-mini — distinguir endpoint Azure OpenAI (openai.azure.com) del de Foundry Models (services.ai.azure.com/models)
