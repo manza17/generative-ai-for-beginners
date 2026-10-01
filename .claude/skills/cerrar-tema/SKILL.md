@@ -15,6 +15,26 @@ description: Cierra un tema, ejercicio o lección y propone el commit del progre
 4. **Progreso:** actualiza `aprendizaje/PROGRESO.md`:
    - Estado de la lección (🟡 En curso o ✅ Terminada, con fecha de fin).
    - Una línea en "Bitácora": fecha — qué hice — qué me costó.
+   - **Tablero de Notion:** si la lección quedó ✅, márcala en la página `ruta-ia-agentica-tasklist` (id `3c73dda0e9ce82c3b3700141dd0e2e97`), sección "Fase 0", cambiando `- [ ]` por `- [x]` en su ítem con `update_content` (edición mínima, nunca reemplazar la página entera). Usa esta tabla para no confundir ítems parecidos:
+
+     | # | Ítem en Notion | # | Ítem en Notion |
+     |---|---|---|---|
+     | 00 | Configuración del curso (Course Setup) | 11 | Function calling |
+     | 01 | Introducción a la IA generativa y los LLMs | 12 | UX para apps de IA |
+     | 02 | Explorar y comparar distintos LLMs | 13 | Seguridad en apps de IA generativa |
+     | 03 | Uso responsable de la IA generativa | 14 | Ciclo de vida de apps de IA generativa (LLMOps) |
+     | 04 | Fundamentos de prompt engineering | 15 | RAG y bases de datos vectoriales |
+     | 05 | Prompts avanzados | 16 | Modelos open source |
+     | 06 | Apps de generación de texto | 17 | Agentes de IA |
+     | 07 | Apps de chat | 18 | Fine-tuning |
+     | 08 | Apps de búsqueda | 19 | Small Language Models (SLMs) |
+     | 09 | Crear app generación de imagen. | 20 | Modelos de Mistral |
+     | 10 | Apps low code | 21 | Modelos de Meta |
+
+     - Antes de editar, haz `fetch` de la página para confirmar el texto exacto del ítem.
+     - Si el ítem no existe, agrégalo en su posición según el orden del curso, ya marcado.
+     - Si el conector de Notion no está disponible, avísame y sigue con el resto del cierre.
+     - Notion no forma parte del commit: es un cambio externo, avísame cuando lo hagas.
 5. **Seguridad antes del commit:**
    - Confirma que `.env` no aparece en `git status`.
    - Busca en los archivos a commitear posibles secretos (`key`, `token`, `credential`, `secret`). Si encuentras algo, avísame y no lo incluyas.
