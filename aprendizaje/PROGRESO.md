@@ -6,7 +6,7 @@ Estados: ⬜ Pendiente · 🟡 En curso · ✅ Terminada · ⏭️ Salteada
 |----|--------------------------------------|--------|--------|-----|----------------------|
 | 00 | Course Setup                         | ✅     | 2026-09-23 | 2026-09-23 | Entorno de aprendizaje listo: CLAUDE.md, skills, plantillas y permisos |
 | 01 | Introducción a GenAI y LLMs          | ✅     | 2026-09-23 | 2026-09-28 | Cómo funciona un LLM (tokens, prefill/decode, temperatura, alucinaciones) + assignment en inglés |
-| 02 | Explorar y comparar LLMs             | ⬜     |        |     |                      |
+| 02 | Explorar y comparar LLMs             | ✅     | 2026-09-29 | 2026-09-29 | Tipos de modelos, cómo elegirlos y escalera prompt → RAG → fine-tuning → entrenar |
 | 03 | Uso responsable de GenAI             | ⬜     |        |     |                      |
 | 04 | Fundamentos de Prompt Engineering    | ⬜     |        |     |                      |
 | 05 | Prompts avanzados                    | ⬜     |        |     |                      |
@@ -33,3 +33,4 @@ Estados: ⬜ Pendiente · 🟡 En curso · ✅ Terminada · ⏭️ Salteada
 2026-09-24 — Lección 18 (fuera de orden): fine-tuning gpt-4.1-nano developerTier, deploy ckpt-step-80 en Developer Tier — valores de trainingType de la API, esperar archivos processed, leer train vs valid loss
 2026-09-24 — Lección 09 (fuera de orden): generación de imágenes con gpt-image-2.5-flare y revisión del manejo de errores — elegir modelo sin acceso restringido, separar variables de deployment
 2026-09-28 — Lección 01 retomada desde cero: 4 bloques teóricos y assignment en inglés (startup de turnos por WhatsApp) — prefill vs decode y cuello de botella; alucinación por frecuencia en datos, no por vocabulario; inglés escrito (plurales, -s de 3ª persona, sujeto/objeto)
+2026-09-29 — Lección 02: clasificación de modelos, evaluación con datos propios y cuándo usar few-shot, RAG o fine-tuning — hacer la cuenta completa de costos (few-shot variable vs hosting fijo por hora); RAG no modifica el modelo ni es más robusto que el prompt
