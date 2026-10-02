@@ -53,7 +53,7 @@
 - Lección teórica, sin código. Ejercicios de repaso incluidos en "Conceptos" (few-shot / RAG / fine-tuning y knowledge check).
 
 ## Dudas pendientes
-- [ ] Challenge pendiente: leer sobre RAG en Azure AI Search aplicado a mi negocio (https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview). Se ve a fondo en las lecciones 08 y 15.
+- [x] Challenge leído (ver "Documentación recomendada" abajo): leer sobre RAG en Azure AI Search aplicado a mi negocio (https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview). Se ve a fondo en las lecciones 08 y 15.
 
 ## Resumen en una frase
 
@@ -72,3 +72,82 @@ Para elegir un modelo: la *model card* descarta, los benchmarks comparan y mis p
 
 El concepto más grande que me llevo son los 4 escalones para mejorar resultados, de menor a mayor costo: prompt con contexto, RAG, fine-tuning y entrenar desde cero, haciendo siempre la cuenta completa de costos antes de subir de escalón.
 > ✏️ Agregados el párrafo de cómo elegir un modelo (era uno de los objetivos de la lección) y la idea de "hacer la cuenta completa", que fue el aprendizaje del ejercicio de costos.
+
+## Documentación recomendada - learning
+- RAG no reemplaza al LLM: le proporciona información relevante para que el LLM pueda generar una respuesta basada en datos externos.
+- Azure AI Search es principalmente la capa de recuperación, no el modelo que genera la respuesta.
+- En Agentic retrieval El LLM puede entender la pregunta, dividirla en subconsultas y ejecutarlas en paralelo.
+
+Pregunta compleja
+       ↓
+      LLM
+       ↓
+divide la pregunta
+       ↓
+ ┌─────┼─────┐
+ ↓     ↓     ↓
+Q1    Q2    Q3
+ ↓     ↓     ↓
+Search Search Search
+ └─────┼─────┘
+       ↓
+  mejores resultados
+       ↓
+      LLM
+       ↓
+    respuesta
+
+Por ejemplo: 
+** "¿Cuál es la política de vacaciones para empleados remotos contratados después de 2023?" **
+Puede convertirse en: 
+Q1 → política de vacaciones
+Q2 → empleados remotos
+Q3 → contrataciones posteriores a 2023
+
+## ---------------- Mapa mental ---------------------
+
+RAG
+│
+├── 1. PREPARAR DATOS
+│      ├── documentos
+│      ├── chunking
+│      └── embeddings
+│
+├── 2. INDEXAR
+│      └── Azure AI Search
+│
+├── 3. RECUPERAR
+│      ├── keyword
+│      ├── vector
+│      └── hybrid ⭐
+│
+├── 4. RANKING
+│      └── semantic ranking
+│
+└── 5. GENERAR
+       └── LLM
+
+RAG CLÁSICO
+Pregunta
+   ↓
+Search
+   ↓
+Resultados
+   ↓
+LLM
+
+
+AGENTIC RAG
+Pregunta
+   ↓
+LLM analiza
+   ↓
+Subconsultas
+   ↓
+Search
+   ↓
+Resultados
+   ↓
+LLM
+   ↓
+Respuesta
