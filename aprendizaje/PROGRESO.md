@@ -7,7 +7,7 @@ Estados: ⬜ Pendiente · 🟡 En curso · ✅ Terminada · ⏭️ Salteada
 | 00 | Course Setup                         | ✅     | 2026-09-23 | 2026-09-23 | Entorno de aprendizaje listo: CLAUDE.md, skills, plantillas y permisos |
 | 01 | Introducción a GenAI y LLMs          | ✅     | 2026-09-23 | 2026-09-28 | Cómo funciona un LLM (tokens, prefill/decode, temperatura, alucinaciones) + assignment en inglés |
 | 02 | Explorar y comparar LLMs             | ✅     | 2026-09-29 | 2026-09-29 | Tipos de modelos, cómo elegirlos y escalera prompt → RAG → fine-tuning → entrenar |
-| 03 | Uso responsable de GenAI             | ⬜     |        |     |                      |
+| 03 | Uso responsable de GenAI             | ✅     | 2026-10-01 | 2026-10-02 | 6 principios, 3 riesgos y ciclo medir → mitigar (4 capas) → operar, aplicado a Bartun |
 | 04 | Fundamentos de Prompt Engineering    | ⬜     |        |     |                      |
 | 05 | Prompts avanzados                    | ⬜     |        |     |                      |
 | 06 | Apps de generación de texto          | ⬜     |        |     |                      |
@@ -34,3 +34,4 @@ Estados: ⬜ Pendiente · 🟡 En curso · ✅ Terminada · ⏭️ Salteada
 2026-09-24 — Lección 09 (fuera de orden): generación de imágenes con gpt-image-2.5-flare y revisión del manejo de errores — elegir modelo sin acceso restringido, separar variables de deployment
 2026-09-28 — Lección 01 retomada desde cero: 4 bloques teóricos y assignment en inglés (startup de turnos por WhatsApp) — prefill vs decode y cuello de botella; alucinación por frecuencia en datos, no por vocabulario; inglés escrito (plurales, -s de 3ª persona, sujeto/objeto)
 2026-09-29 — Lección 02: clasificación de modelos, evaluación con datos propios y cuándo usar few-shot, RAG o fine-tuning — hacer la cuenta completa de costos (few-shot variable vs hosting fijo por hora); RAG no modifica el modelo ni es más robusto que el prompt
+2026-10-02 — Lección 03: IA responsable aplicada a mi asistente de turnos (transparencia, sesgos, estafa, jailbreak, incidentes) + challenge de Content Safety — defensa probabilística (filtros, prompt) vs determinista (permisos en el backend); no culpar a la IA sin revisar logs; la frontera de la IA responsable es el daño
