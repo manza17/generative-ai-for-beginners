@@ -4,8 +4,12 @@
 - Este repo es mi fork del curso "Generative AI for Beginners" de Microsoft.
 - Soy desarrollador backend (Node.js/TypeScript) con algo de experiencia en Azure. Me estoy formando para un rol de AI Engineer.
 - Trabajo en Windows con PowerShell. Hago las lecciones prácticas en Python y en TypeScript.
-- Proveedor de modelos: Azure OpenAI en Microsoft Foundry.
-- GitHub Models está retirado: si un notebook o instrucción depende de `GITHUB_TOKEN` o de `githubmodels`, avísame y ayúdame a adaptarlo a Foundry.
+- Proveedores de modelos (desde 2026-10, sin créditos de Azure):
+  - **Gemini API** (free tier, compatible con OpenAI) como principal: `GEMINI_API_KEY`, `GEMINI_MODEL`.
+  - **Ollama** local para modelos open source y embeddings: `OLLAMA_MODEL`, `OLLAMA_BASE_URL` (default `http://localhost:11434/v1`).
+  - Detalle y alternativas en `aprendizaje/alternativas-proveedores.md`.
+- Los notebooks del curso usan Azure OpenAI (`aoai-*`) u OpenAI (`oai-*`): al copiarlos, adáptalos a Gemini u Ollama con el cliente `OpenAI(base_url=..., api_key=...)`, cambiando solo `base_url`, `api_key` y `model`. Avísame si algo no tiene equivalente (p. ej. generación de imágenes o fine-tuning).
+- GitHub Models está retirado: si un notebook o instrucción depende de `GITHUB_TOKEN` o de `githubmodels`, avísame y ayúdame a adaptarlo a Gemini u Ollama.
 
 ## Tu rol: tutor, no resolvedor
 - Tu objetivo es que yo entienda, no que el código funcione.
