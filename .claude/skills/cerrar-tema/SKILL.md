@@ -12,6 +12,7 @@ description: Cierra un tema, ejercicio o lección y propone el commit del progre
    - El código bloque por bloque, con las explicaciones que diste en la sesión.
    - Gotchas y errores que aparecieron, con su causa.
    - 4–5 preguntas de autoevaluación.
+   - **Resumen AI-103:** si en la lección apareció algo relevante para la certificación Microsoft AI-103 (código o conceptos de Azure: clientes, APIs, parámetros, servicios), crea `aprendizaje/leccion-XX/ai-103.md`: solo lo de Azure, con código mínimo, diferencias que suelen preguntar y trampas típicas. Agrega una línea por lección en el índice `aprendizaje/AI-103.md`. Si la lección no tiene nada de Azure, omite este paso.
 4. **Progreso:** actualiza `aprendizaje/PROGRESO.md`:
    - Estado de la lección (🟡 En curso o ✅ Terminada, con fecha de fin).
    - Una línea en "Bitácora": fecha — qué hice — qué me costó.
